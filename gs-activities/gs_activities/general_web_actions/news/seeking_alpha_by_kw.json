@@ -1,0 +1,6 @@
+{
+	"name": "seeking_alpha_by_kw",
+	"url": "https://seekingalpha.com/",
+	"kw_input_selector": "<webctrl id='hd-auto' tag='INPUT' />",
+	"no_data_selector": ""
+}

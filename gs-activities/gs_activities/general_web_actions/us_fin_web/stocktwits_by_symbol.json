@@ -1,0 +1,6 @@
+{
+	"name": "stocktwits_by_symbol",
+	"url": "https://stocktwits.com/symbol/{kw}",
+	"kw_input_selector": "",
+	"no_data_selector": ""
+}

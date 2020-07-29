@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" ?>
+<cfg>
+	<name>google_news_tab</name>
+	<url>https://www.google.com/</url>
+	<selector_of_load_finished_click><![CDATA[
+	<webctrl aaname='News' parentid='hdtb-msb-vis' tag='A' />
+	]]>
+	</selector_of_load_finished_click>
+	<kw_input_selector><![CDATA[
+	<webctrl name='q' tag='INPUT' />
+	]]></kw_input_selector>
+	<no_data_selector />
+	<additional_kw_selector />
+	<table_extract_meta>
+	<![CDATA[
+<extract>
+	<row exact="1">
+		<webctrl tag='div' class='g'/>
+	</row>
+	<column exact='1' name='full_text_url' attr='href' name2='title' attr2='text'>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="h3" idx="1"/>
+		<webctrl tag="a" idx="1"/>
+	</column>
+	<column exact='1' name='channel_in_site' attr='text'>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="span" idx="1"/>
+	</column>
+	<column exact='1' name='publish_time' attr='text'>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="span" idx="3"/>	
+	</column>
+	<column exact='1' name='abstract' attr='text'>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" idx="1"/>
+		<webctrl tag="div" class="st" idx="1"/>
+	</column>
+</extract>
+	]]>
+	</table_extract_meta>
+	<selector_of_next_link><![CDATA[
+	<webctrl aaname='Next' parentid='pnnext' tag='SPAN' />
+	]]>
+	</selector_of_next_link>
+	<max_table_rows>30</max_table_rows>
+	<article_site>google</article_site>
+	<random_sleep>1</random_sleep>
+</cfg>

@@ -1,0 +1,6 @@
+{
+	"name": "google_translate",
+	"url": "https://translate.google.com/",
+	"kw_input_selector": "<webctrl tag='TEXTAREA' />",
+	"no_data_selector": ""
+}

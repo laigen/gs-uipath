@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" ?>
+<cfg>
+	<name>xueqiu_by_symbol</name>
+	<url>https://xueqiu.com/S/{kw}</url>
+	<selector_of_load_finished_click><![CDATA[
+	<webctrl aaname='资讯' parentid='app' tag='A' />
+	]]>
+	</selector_of_load_finished_click>
+	<kw_input_selector />
+	<no_data_selector />
+	<additional_kw_selector>
+	<![CDATA[
+	<webctrl tag='INPUT' parentclass='search-input' parentid='app' />
+	]]>
+	</additional_kw_selector>
+	<table_extract_meta>
+	<![CDATA[
+	<extract>
+	<row exact="1">
+		<webctrl tag='article' class='timeline__item'/>
+	</row>
+	<column exact='1' name='full_text_url' attr='href' name2='publish_time' attr2='text'>
+		<webctrl tag='div' class='timeline__item__main' />
+		<webctrl tag='div' class='timeline__item__info' />
+		<webctrl tag='a' class='date-and-source' />
+	</column>
+	<column exact='1' name='title' attr='text'>
+		<webctrl tag='div' class='timeline__item__main' />
+		<webctrl tag='div' class='timeline__item__bd' />
+		<webctrl tag='div' class='timeline__item__content timeline__item__content--longtext' />
+		<webctrl tag='h3' class='timeline__item__title' />
+	</column>
+	<column exact='1' name='abstract' attr='text'>
+		<webctrl tag='div' class='timeline__item__main' />
+		<webctrl tag='div' class='timeline__item__bd' />
+		<webctrl tag='div' class='timeline__item__content timeline__item__content--longtext' />
+		<webctrl tag='div' class='content content--description' />
+		<webctrl tag='div' idx='1'/>
+	</column>
+</extract>
+	]]>
+	</table_extract_meta>
+	<selector_of_next_link><![CDATA[
+	<webctrl aaname='下一页' parentid='app' tag='A' />
+	]]>
+	</selector_of_next_link>
+	<max_table_rows>50</max_table_rows>
+	<publish_time_preprocess>split_by_chn_dot</publish_time_preprocess>
+	<article_site>xueqiu</article_site>
+</cfg>

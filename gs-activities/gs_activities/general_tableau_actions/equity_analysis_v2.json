@@ -1,0 +1,5 @@
+{
+	"tab_idx": 1,
+	"industry": "<wnd app='tableau.exe' cls='Qt5QWindowIcon' title='Tableau - {file_name}' /><ctrl role='editable text' idx='3' />",
+	"sector": "<wnd app='tableau.exe' cls='Qt5QWindowIcon' title='Tableau - {file_name}' /><ctrl role='editable text' idx='5' />"
+}

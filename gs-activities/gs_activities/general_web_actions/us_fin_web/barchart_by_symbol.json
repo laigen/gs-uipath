@@ -1,0 +1,6 @@
+{
+	"name": "barchart_by_symbol",
+	"url": "https://www.barchart.com/stocks/quotes/{kw}",
+	"kw_input_selector": "",
+	"no_data_selector": ""
+}

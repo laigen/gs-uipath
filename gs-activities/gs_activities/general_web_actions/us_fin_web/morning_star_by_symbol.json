@@ -1,0 +1,6 @@
+{
+	"name": "morning_star_by_symbol",
+	"url": "https://www.morningstar.com/stocks/xnas/{kw}/quote",
+	"kw_input_selector": "",
+	"no_data_selector": ""
+}

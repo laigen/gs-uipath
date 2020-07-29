@@ -1,0 +1,6 @@
+{
+	"name": "fool_by_symbol",
+	"url": "https://www.fool.com/",
+	"kw_input_selector": "<webctrl id='fool-search' tag='INPUT' />",
+	"no_data_selector": ""
+}

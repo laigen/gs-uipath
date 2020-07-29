@@ -1,0 +1,6 @@
+{
+	"name": "google_drive",
+	"url": "https://drive.google.com/drive/my-drive",
+	"kw_input_selector": "<webctrl name='q' tag='INPUT' />",
+	"no_data_selector": "<webctrl id='empty-view-title-search' tag='DIV' />"
+}

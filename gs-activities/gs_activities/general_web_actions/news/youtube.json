@@ -1,0 +1,6 @@
+{
+	"name": "youtube",
+	"url": "https://www.youtube.com/",
+	"kw_input_selector": "<webctrl id='search' tag='INPUT' />",
+	"no_data_selector": ""
+}

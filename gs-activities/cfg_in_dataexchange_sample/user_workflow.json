@@ -1,0 +1,30 @@
+{
+	"workflow_cls": "gs_desktop_envs.uipath.desktop_action_workflow_for_finance:GSDesktopFinancialResearchWorkflowV1",
+	"workflow_cfg": {
+		"symbol_sml_workflow" : [
+			{ "general_web_actions" : 
+				{
+					"SELF" : { "DispB2": ["utility/*","us_fin_web/*","news/*"] }
+				} 
+			},
+			{ "gereral_tablau_actions" :
+				{
+					"SELF" : ["equity_analysis_v2"]
+				}
+			}
+		],
+		"symbol_mid_workflow":[
+			{ "general_web_actions" : 
+				{
+					"SELF" : { "DispA1": ["personal/*"] }
+				} 
+			}
+		]
+	},
+	"cmd_setting":{
+		"hotkey_mapping":{
+			"KEY_1" : ["symbol_sml_workflow","symbol_mid_workflow"],
+			"KEY_2" : ["symbol_mid_workflow"]
+		}
+	}
+}

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" ?>
+<cfg>
+	<name>us_market_track_insider_buy_sell</name>
+	<url>http://www.insidercow.com/history/company.jsp?company={kw}</url>
+	<selector_of_load_finished_click><![CDATA[
+	<webctrl tag='FONT' class='tr-chart-header' />
+	]]>
+	</selector_of_load_finished_click>
+	<kw_input_selector />
+	<no_data_selector />
+	<additional_kw_selector />
+	<table_extract_meta>
+	<![CDATA[
+<extract>
+	<row exact="1">
+		<webctrl tag='table' idx="3" />
+		<webctrl tag='tbody' idx="1" />
+		<webctrl tag='tr' class='t-body'/>
+	</row>
+	<column exact='1' name='buy_sell_flag' attr='text'>
+		<webctrl tag='td' idx="1" />
+	</column>
+	<column exact='1' name='transaction_date' attr='text'>
+		<webctrl tag='td' idx="2" />
+	</column>
+	<column exact='1' name='filed_date' attr='text'>
+		<webctrl tag='td' idx="3" />
+	</column>
+	<column exact='1' name='insider_name' attr='text'>
+		<webctrl tag='td' idx="6" />
+	</column>
+	<column exact='1' name='relationship' attr='text'>
+		<webctrl tag='td' idx="7" />
+	</column>
+	<column exact='1' name='share_amount' attr='text'>
+		<webctrl tag='td' idx="8" />
+	</column>
+	<column exact='1' name='unit_price' attr='text'>
+		<webctrl tag='td' idx="9" />
+	</column>
+	<column exact='1' name='total_proceeds' attr='text'>
+		<webctrl tag='td' idx="10" />
+	</column>
+	<column exact='1' name='share_owned' attr='text'>
+		<webctrl tag='td' idx="11" />
+	</column>
+</extract>
+	]]>
+	</table_extract_meta>
+	<selector_of_next_link />
+	<max_table_rows>0</max_table_rows>
+	<publish_time_preprocess />
+	<article_site>insidercow</article_site>
+</cfg>

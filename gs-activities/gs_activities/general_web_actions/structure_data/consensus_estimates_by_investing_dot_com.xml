@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" ?>
+<cfg>
+	<name>consensus_estimates_by_investing_dot_com</name>
+	<!--因为最终链接不确定，所以从雪球上 redirect 过去-->
+	<url>https://xueqiu.com/snowman/S/{kw}/detail#/GSJJ</url>
+	<selector_of_load_finished_click/>
+	<redirect_ele_selector>
+	<![CDATA[
+		<webctrl aaname='市场预期' tag='A' />
+	]]>
+	</redirect_ele_selector>
+	<redirect_ele_attr>href</redirect_ele_attr>
+	<kw_input_selector />
+	<no_data_selector />
+	<additional_kw_selector />
+	<table_extract_meta/>
+	<selector_of_next_link />
+	<max_table_rows>0</max_table_rows>
+	<publish_time_preprocess />
+	<article_site>investing</article_site>
+</cfg>

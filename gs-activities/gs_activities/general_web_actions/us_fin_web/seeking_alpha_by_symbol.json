@@ -1,0 +1,6 @@
+{
+	"name": "seeking_alpha_by_symbol",
+	"url": "https://seekingalpha.com/symbol/{kw}",
+	"kw_input_selector": "",
+	"no_data_selector": ""
+}

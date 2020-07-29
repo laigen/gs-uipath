@@ -1,0 +1,6 @@
+{
+	"name": "google_news",
+	"url": "https://news.google.com/",
+	"kw_input_selector": "<webctrl idx='1' tag='INPUT' type='text' />",
+	"no_data_selector": ""
+}

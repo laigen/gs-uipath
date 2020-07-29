@@ -1,0 +1,7 @@
+{
+	"account":"laigen_gs",
+	"machine":"DevPC",
+	"monitors" : [["DispA1","DispA2"],["DispB1","DispB2"]],
+	"desktop_env":"/mnt/d/work/gs-desktop-envs/gs_desktop_envs",
+	"ubuntu_cmd":"ubuntu"
+}

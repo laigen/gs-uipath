@@ -1,0 +1,6 @@
+{
+	"name": "twitter",
+	"url": "https://twitter.com/home",
+	"kw_input_selector": "<webctrl tag='INPUT' type='text' />",
+	"no_data_selector": ""
+}
